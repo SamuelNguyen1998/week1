@@ -41,7 +41,6 @@ function userGuessed() {
 
 		if (userGuessed == secretNumber) {
 			writeMessage('message', '<p style="background-color:#02e60b;">You got me in ' + numberOfGuesses +' guesses, I was thinking ' + secretNumber + '. Let\'s go again...</p>');
-			newGame();
 		} else if (userGuessed < secretNumber) {
 			// higher
 			writeMessage('message', '<p style="background-color:#f10606;">Sorry your guess is too low, guess higher. You have '+(limitOfGuesses-numberOfGuesses)+' guesses left, try again...</p>');
